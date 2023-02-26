@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Inter:wght@400;500;700&family=Roboto&display=swap");
+
+@import "variables.css";
+
+* {
+  font-family: "inter", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 32px;
+}
+.container-fluid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+}
+form {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form-container {
+  width: 360px;
+  margin: auto;
+}
+.logo {
+  left: 0;
+  top: 0;
+  
+  position: absolute;
+  color: var(--secondary-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+}
+.logo span {
+  padding-left: 40px;
+  margin-top: 7px;
+}
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  margin-top: 0;
+  margin-bottom: 8px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: var(--secondary-color);
+}
+p {
+  color: var(--accent-2);
+  margin-top: 0;
+  margin-bottom: 56px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.container-fluid > div img {
+  display: block;
+  width: 100%;
+}
+
+.form-group label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--secondary-color);
+  display: block;
+  margin-bottom: 8px;
+}
+.form-group input {
+  padding-left: 14px;
+  padding-right: 48px;
+  width: 100%;
+  height: 44px;
+  display: block;
+  color: var(--accent-2);
+  border: 1px solid var(--accent-2);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.form-group > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.form-group img {
+  position: absolute;
+  z-index: 1;
+  right: 14px;
+  cursor: pointer;
+}
+.remember-forogot-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  margin-top: 15px;
+}
+.remember-forogot-container input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid var(--accent-2);
+}
+.remember-forogot-container label {
+  font-weight: 500;
+  padding-left: 8px;
+  user-select: none;
+  -webkit-user-select: none;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+.remember-forogot-container a {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+}
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+.buttons-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0;
+}
+.buttons-container button {
+  border-radius: 8px;
+  height: 44px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  border: 0;
+}
+.buttons-container button:first-child {
+  background-color: var(--primary-color);
+  color: white;
+}
+.buttons-container button:last-child {
+  background-color: var(--accent-1);
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 8px;
+}
+.sign-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--secondary-color);
+}
+.sign-up a {
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-left: 5px;
+}
